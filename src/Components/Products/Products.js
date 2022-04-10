@@ -1,14 +1,14 @@
 import React from 'react';
 import useFirebase from '../../Hooks/useFirebase';
 
-const Home = () => {
+const Products = () => {
     const { user } = useFirebase();
     return (
         <div>
-            <h2>this is home</h2>
-            <p>Current user is :{user ? user.displayName : 'No body'}</p>
+            <h1>Knock Knock!!</h1>
+            <p>{user ? user.displayName : 'voot'}</p>
         </div>
     );
 };
 
-export default Home;
+export default Products;
